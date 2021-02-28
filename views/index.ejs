@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="../stylesheets/style.css">
+ 
+</head>
+<body>
+  <div class="homepage">
+      <div id="nav">
+        <a href="/" class="logo">Travel Blog</a>
+        <div id="links">
+          <a href="/newblog">New Blogs Section</a>
+        <a href="/trending">Trending Blog Section</a>
+        </div>
+        <% if(loggedIn === true){ %>
+          <a href="/logout" class='log'> LogOut</a>
+
+          <% } else { %>
+          <div id="btns">
+            <a href="/register">Register</a>
+            <a href="/login" class='log'>Login</a>
+          </div>
+          
+          <% }  %>
+        
+       
+        
+      </div>
+
+      <div id="text">
+        <h1>A rollercoaster ride of adventures <br> around the <span>World.</span></h1>
+
+     
+      <div id="menu">
+        <div id="option">
+          <div class="categories active">
+            <i class="ri-heart-line"></i>
+            <h3>Liked Post</h3>
+          </div>
+          <div class="categories">
+            <i class="ri-quill-pen-line"></i>
+            <h3>Recent Post</h3>
+          </div>
+          <div class="categories">
+            <i class="ri-user-search-line"></i>
+            <h3>User Search</h3>
+          </div>
+        </div>
+       <div class="main">
+        <div class="blogex">
+         <div class="pic"></div>
+         <div class="content">
+          <h3>Justin Bieber</h3>
+          <h4>Australia</h4>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam, minus quae explicabo, fugit consequuntur, laborum a corporis doloremque nulla necessitatibus omnis sed? Libero fugiat ratione eveniet velit vero nesciunt laboriosam?</p>
+          <div class="icons">
+            <i class="ri-heart-2-line"></i>
+          <i class="ri-user-follow-line"></i>
+          <i class="ri-chat-3-line"></i>
+          </div>
+        </div>
+        </div>
+        <div class="blogex">
+          <div class="pic"></div>
+         <div class="content">
+          <h3>Justin Bieber</h3>
+          <h4>Australia</h4>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam, minus quae explicabo, fugit consequuntur, laborum a corporis doloremque nulla necessitatibus omnis sed? Libero fugiat ratione eveniet velit vero nesciunt laboriosam?</p>
+          <div class="icons">
+            <i class="ri-heart-2-line"></i>
+          <i class="ri-user-follow-line"></i>
+          <i class="ri-chat-3-line"></i>
+          </div>
+        </div>
+        </div>
+        <div class="blogex">
+          <div class="pic"></div>
+         <div class="content">
+          <h3>Justin Bieber</h3>
+          <h4>Australia</h4>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam, minus quae explicabo, fugit consequuntur, laborum a corporis doloremque nulla necessitatibus omnis sed? Libero fugiat ratione eveniet velit vero nesciunt laboriosam?</p>
+          <div class="icons">
+            <i class="ri-heart-2-line"></i>
+          <i class="ri-user-follow-line"></i>
+          <i class="ri-chat-3-line"></i>
+          </div>
+        </div>
+        </div>
+       </div>
+      </div>
+    </div>
+    
+    </div>
+</body>
+</html>

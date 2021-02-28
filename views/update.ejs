@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="../stylesheets/update.css">
+</head>
+<body>
+    <div class="loginpage">
+        <div class="detail">
+            
+
+
+            <div class="left">
+                
+                <h1>Update Your Page</h1>
+                <form action="/update" method="post">
+                    <div class="un">
+                        <i class="ri-user-line"></i>
+                         <input type="text" name="name" placeholder="Full Name" value= <%=details.name%>>
+                    </div>
+                        <div class="un">
+                            <i class="ri-user-line"></i>
+                            <input type="text" name="username" placeholder="UserName" value= <%=details.username%>>
+                        </div>
+                            <div class="pass">
+                                <i class="ri-lock-password-line"></i>
+                                <input type="email" name="email" placeholder="Email" value= <%=details.email%>>
+                            </div>
+                   
+                     
+                   <div class="sub">
+                    <input type="submit" value="Update">
+                    <a href="/homepage">Go Back</a>
+                   </div>
+                   
+                    </form>
+                   
+                    
+
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

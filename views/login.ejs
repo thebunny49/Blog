@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="../stylesheets/login.css">
+</head>
+<body>
+    <div class="loginpage">
+        <div class="detail">
+            <div class="left"></div>
+
+
+            <div class="right">
+                <img src="../images/logo.jpg"  alt="">
+                <h1>Hey there, Login Now</h1>
+               <div class="err">
+                <% if (messages.error) { %>
+                    <p> <%= messages.error %></p>
+                    <% }%>
+               </div>
+                <form action="/login" method="post">
+                    <div class="un">
+                        <i class="ri-user-line"></i>
+                         <input type="text" name="username" placeholder="UserName"></div>
+                   <div class="pass">
+                    <i class="ri-lock-password-line"></i>
+                    <input type="password" name="password" placeholder="Password">
+                   </div>
+                   <div class="sub">
+                    <input type="submit"  value="Login">
+                   </div>
+                    </form>
+                    <a href="/" class="fp">Forgot Password?</a>
+                    <a href="/" class="reg">Don't Have Account? <br>Sign Up</a>
+                    
+
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
